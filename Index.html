@@ -1,0 +1,51 @@
+<html>
+
+ <head>
+
+ <meta charset="UTF-8">
+
+ <title>Carro</title>
+
+ <style>
+
+ 
+
+ </style>
+
+ <script>
+
+ function v(){
+
+ var litros=document.f.litro.value;
+
+ if(litros){
+
+ var kms=litros/2;
+ var div_km=document.getElementById("km");
+ div_km.innerHTML="<div id='km'>"+kms+"</div>";
+
+ }
+
+ }
+
+ </script>
+
+ </head>
+
+ <body>
+
+ <h1>Quantos km percorre o meu carro?</h1>
+
+ <form name="f">
+
+ Quantos litros tem no seu carrp:<input type="number" name="litro" placeholder=""Digite aqui quantos litros"/>
+
+ <input tyoe="button" value="verificar" onclick="v()"/>
+
+ <div id="km"></div>
+
+ <form>
+
+ </body>
+
+</html>
